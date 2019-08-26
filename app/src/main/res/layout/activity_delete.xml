@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#151516">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="52dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1"
+            tools:ignore="ScrollViewSize">
+
+
+
+            <EditText
+                android:id="@+id/etidNo"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="60dp"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ellipsize="start"
+                android:gravity="center"
+                android:hint="ID NUMBER"
+                android:inputType="text"
+                android:background="@drawable/edittextstyle"
+                android:textColorHint="#000c96"
+                android:textColor="#16ffeb"
+                tools:ignore="Deprecated,HardcodedText,ObsoleteLayoutParam" />
+
+
+            <Button
+                android:text="DELETE"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:id="@+id/btnDelete"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textColor="#16ffeb"
+                android:background="@drawable/buttonstyle"
+                android:layout_marginTop="-50dp"
+                tools:ignore="HardcodedText" />
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/grdNumbers" >
+                <TableRow>
+                    <TextView
+                        android:layout_width="58dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:minWidth="30px"
+                        android:gravity="center"
+                        android:textColor="#16ffeb"
+                        android:text="ID N0"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/cell_shape"
+                        />
+                    <TextView
+                        android:layout_width="64dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:minWidth="60px"
+                        android:gravity="center"
+                        android:textColor="#16ffeb"
+                        android:text="Firstname"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/cell_shape"
+                        />
+                    <TextView
+                        android:layout_width="55dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:minWidth="30px"
+                        android:gravity="center"
+                        android:textColor="#16ffeb"
+                        android:text="Course"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/cell_shape"
+                        />
+                    <TextView
+                        android:layout_width="62dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/cell_shape"
+                        android:minWidth="30px"
+                        android:gravity="center"
+                        android:textColor="#16ffeb"
+                        android:layout_marginTop="10dp"
+                        android:text="Year"
+                        />
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#151516">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="95dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1"
+            tools:ignore="ScrollViewSize">
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Student Profiler"
+                android:gravity="center"
+                android:textSize="32dip"
+                android:textColor="#16ffeb"
+                android:background="#585959"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="20dp"
+                tools:ignore="HardcodedText,SpUsage" />
+
+
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="60dp"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ellipsize="start"
+                android:gravity="center"
+                android:hint="Username"
+                android:inputType="text"
+                android:background="@drawable/edittextstyle"
+                android:textColorHint="#000c96"
+                android:textColor="#151516"
+                tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+            <EditText
+                android:password="true"
+                android:id="@+id/etPassword"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="-50dp"
+                android:layout_marginBottom="60dp"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ellipsize="start"
+                android:gravity="center"
+                android:hint="Password"
+                android:inputType="text"
+                android:background="@drawable/edittextstyle"
+                android:textColorHint="#000c96"
+                android:textColor="#151516"
+                tools:ignore="Deprecated,HardcodedText,ObsoleteLayoutParam" />
+
+            <Button
+                android:text="LOGIN"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:id="@+id/btnLogin"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textColor="#16ffeb"
+                android:layout_marginTop="-30dp"
+                android:background="@drawable/buttonstyle"
+                tools:ignore="HardcodedText" />
+
+
+            <TextView
+                android:id="@+id/tvSignup1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Click Here to Register!"
+                android:gravity="center"
+                android:textSize="16dip"
+                android:textColor="#16ffeb"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="20dp"
+                tools:ignore="HardcodedText,SpUsage" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

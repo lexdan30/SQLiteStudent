@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#151516">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1"
+            tools:ignore="ScrollViewSize">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="INSERT"
+                android:gravity="center"
+                android:textSize="32dip"
+                android:textColor="#16ffeb"
+                android:background="#585959"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                tools:ignore="HardcodedText,SpUsage" />
+
+            <EditText
+                android:id="@+id/etidNo"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ellipsize="start"
+                android:gravity="center"
+                android:hint="ID NUMBER"
+                android:inputType="number"
+                android:background="@drawable/edittextstyle"
+                android:textColorHint="#000c96"
+                android:textColor="#151516"
+                tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+            <EditText
+                android:id="@+id/etlName"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ellipsize="start"
+                android:gravity="center"
+                android:hint="LAST NAME"
+                android:inputType="text"
+                android:background="@drawable/edittextstyle"
+                android:textColorHint="#000c96"
+                android:textColor="#151516"
+                tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+            <EditText
+                android:id="@+id/etfName"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="60dp"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ellipsize="start"
+                android:gravity="center"
+                android:hint="FIRST NAME"
+                android:inputType="text"
+                android:background="@drawable/edittextstyle"
+                android:textColorHint="#000c96"
+                android:textColor="#151516"
+                tools:ignore="Deprecated,HardcodedText,ObsoleteLayoutParam" />
+
+            <EditText
+            android:id="@+id/etmName"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="-50dp"
+            android:layout_marginBottom="60dp"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ellipsize="start"
+            android:gravity="center"
+            android:hint="MIDDLE INITIAL"
+            android:inputType="text"
+            android:background="@drawable/edittextstyle"
+            android:textColorHint="#000c96"
+            android:textColor="#151516"
+            tools:ignore="Deprecated,HardcodedText,ObsoleteLayoutParam" />
+
+            <EditText
+                android:id="@+id/etCourse"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="-50dp"
+                android:layout_marginBottom="60dp"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ellipsize="start"
+                android:gravity="center"
+                android:hint="COURSE"
+                android:inputType="text"
+                android:background="@drawable/edittextstyle"
+                android:textColorHint="#000c96"
+                android:textColor="#151516"
+                tools:ignore="Deprecated,HardcodedText,ObsoleteLayoutParam" />
+
+            <EditText
+                android:id="@+id/etYear"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="-50dp"
+                android:layout_marginBottom="60dp"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ellipsize="start"
+                android:gravity="center"
+                android:hint="YEAR"
+                android:inputType="text"
+                android:background="@drawable/edittextstyle"
+                android:textColorHint="#000c96"
+                android:textColor="#151516"
+                tools:ignore="Deprecated,HardcodedText,ObsoleteLayoutParam" />
+
+            <Button
+                android:text="INSERT"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:id="@+id/btnInsertNew"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textColor="#16ffeb"
+                android:layout_marginTop="-50dp"
+                android:background="@drawable/buttonstyle"
+                tools:ignore="HardcodedText" />
+            <Button
+                android:text="CLEAR"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:id="@+id/btnClear"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textColor="#16ffeb"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/buttonstyle"
+                tools:ignore="HardcodedText" />
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
